@@ -1,0 +1,21 @@
+name: Correct an entry
+description: Report a missing credit, inaccurate summary, broken link, or updated result.
+title: "[Correction]: "
+body:
+  - type: markdown
+    attributes:
+      value: Thank you for keeping this collection accurate and giving the original teams proper credit.
+  - type: input
+    id: entry
+    attributes:
+      label: Entry or section
+      description: Name or link the entry that needs attention.
+    validations:
+      required: true
+  - type: textarea
+    id: correction
+    attributes:
+      label: What should change?
+      description: Explain the correction and include a supporting source if available.
+    validations:
+      required: true
