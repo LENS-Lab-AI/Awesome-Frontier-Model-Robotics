@@ -1,80 +1,37 @@
 name: Submit a resource
-description: Suggest a paper, report, benchmark, tool, or documented community demo.
+description: Share a title and link — we'll handle the formatting.
 title: "[Submission]: "
 body:
   - type: markdown
     attributes:
-      value: |
-        Thank you for helping build this collection! Authors are welcome to submit their own work.
-        Share the original source and a short explanation; maintainers can help with the entry.
-        Submissions and any contact details you include are visible to people who can access this repository.
+      value: "Thanks for contributing! Just a title and link are enough. Authors are welcome to submit their own work."
   - type: input
     id: resource-title
     attributes:
       label: Resource title
-      placeholder: Title of the paper, report, project, or demo
+      placeholder: Paper, report, benchmark, tool, or demo
     validations:
       required: true
   - type: input
     id: source
     attributes:
-      label: Original source URL
-      description: Link the paper, project, repository, report, or original demo post.
-      placeholder: https://arxiv.org/abs/...
-    validations:
-      required: true
-  - type: input
-    id: authors
-    attributes:
-      label: Authors or team
-      description: Include the original creators; a link to the full author list is welcome.
+      label: Link
+      placeholder: https://...
     validations:
       required: true
   - type: dropdown
     id: category
     attributes:
-      label: Best-fitting section
+      label: Section (optional)
       options:
         - Robot-Control Evaluations
         - Embodied Perception and Reasoning
         - Coding Agents and Tool Use
         - Safety and Reliability
         - Benchmarks and Resources
-        - Not sure — please help categorize
-    validations:
-      required: true
-  - type: dropdown
-    id: source-type
-    attributes:
-      label: Source type
-      options:
-        - Research paper — preprint
-        - Research paper — peer reviewed
-        - Developer report
-        - Independent evaluation
-        - Community demo
-        - Evaluation tooling or dataset
         - Not sure
-    validations:
-      required: true
   - type: textarea
-    id: summary
+    id: notes
     attributes:
-      label: What does this work show?
-      description: A few sentences are enough. Include the model/version, simulation or real robot, and result or limitation if known. Write “not reported” for missing details.
-      placeholder: What was evaluated, why it is useful, and what a reader should keep in mind.
-    validations:
-      required: true
-  - type: textarea
-    id: extra-links
-    attributes:
-      label: Additional links and credit (optional)
-      description: Code, project page, data, author profiles, or a preferred public credit name. No private contact details needed.
-  - type: dropdown
-    id: contribution-path
-    attributes:
-      label: Would you like to add the entry yourself? (optional)
-      options:
-        - Please have a maintainer add it
-        - I would like to open a pull request
-        - I would like help with my first pull request
+      label: Anything else? (optional)
+      description: Authors, code, or a quick note — only if you'd like to add it.
