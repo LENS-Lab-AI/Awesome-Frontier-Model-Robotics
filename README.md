@@ -50,6 +50,7 @@ Last source check: **November 2, 2026**. Paper links point to reviewed versions.
 
 ## Safety and Reliability
 
+- **[LEASH: Stay Safe in Agentic Robotics](https://arxiv.org/abs/2611.14115)** (Nov 2026) — Qinfeng Zhu et al. RoboRisk tests GPT, Gemini, Claude and Grok planners on 92 simulated and 13 real-robot safety tasks; LEASH adds camera-grounded task, action and commit gates. [Project](https://zhuqinfeng1999.github.io/LEASH/) · [Code](https://github.com/zhuqinfeng1999/LEASH)
 - **[Probing Collision Grounding in Vision-Language Models for Safe Human-Robot Collaboration](https://arxiv.org/abs/2605.31196v2)** (CoRL 2026) — Jun Wang, Xiaohao Xu & Xiaonan Huang. TouchSafeBench tests VLM recognition of current and imminent robot collisions in Habitat simulation. [Project](https://jun25336-bit.github.io/TouchSafeBench/)
 - **[Refuses in Chat, Complies with Arms: LLM Refusal Does Not Survive Robot Control](https://arxiv.org/abs/2610.14043v1)** (Oct 2026) — Edward Sun et al. RoboHarm compares refusal across text, code, and robot-control interfaces in simulation and on physical arms. [Earlier report](https://robocurve.org/roboharm/) · [Code](https://github.com/robocurve/roboharm)
 - **[Using large language models for embodied planning introduces systematic safety risks](https://arxiv.org/abs/2604.18463v2)** (May 2026 version) — Tao Zhang et al. DESPITE is a symbolic planning benchmark separating feasible plans from safe ones. [Project](https://despite-safety.github.io/) · [Code](https://github.com/taozhang1004/DESPITE)
